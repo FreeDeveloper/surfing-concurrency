@@ -7,8 +7,6 @@ public class ReorderSet {
     @Getter
     private int a = 0;
     boolean flag = false;
-    @Getter
-    private int i = 0;
 
     public void writerTrue(){
         a = 1;
@@ -17,7 +15,8 @@ public class ReorderSet {
 
     public void reader(){
         if(flag){
-            i = a * a;
+            int i = a * a;
+            System.out.println("i的值为"+i);
         }
     }
 }

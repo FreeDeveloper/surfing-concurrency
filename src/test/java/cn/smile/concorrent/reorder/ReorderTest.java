@@ -28,7 +28,5 @@ public class ReorderTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(reorderSet.getI());
-
     }
 }
