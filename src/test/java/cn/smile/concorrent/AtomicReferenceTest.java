@@ -1,6 +1,5 @@
-package cn.smile.spring.container.bean;
+package cn.smile.concorrent;
 
-import cn.smile.spring.container.bean.factoryBean.AtomicObjectA;
 import org.junit.Test;
 
 import java.util.ArrayList;

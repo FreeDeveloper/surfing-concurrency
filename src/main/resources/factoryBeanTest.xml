@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
 
-    <bean id="car" class="cn.smile.spring.container.bean.factoryBean.CarFactoryBean">
+    <bean id="car" class="CarFactoryBean">
         <property name="carInfo" value="超级跑车,400,201923.12"/>
     </bean>
 </beans>

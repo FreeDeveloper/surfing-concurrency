@@ -1,4 +1,4 @@
-package cn.smile.spring.container.bean;
+package cn.smile.concorrent;
 
 import org.junit.Test;
 
