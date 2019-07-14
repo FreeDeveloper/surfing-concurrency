@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Properties>
+		<Property name="LOG.PATH">${log.path.prefix}</Property>
+		<Property name="LOG.PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t] (%F:%L) - %m%n</Property>
+		<Property name="output_log_level">DEBUG</Property>
+		<!--<Property name="output_log_level">${log.level}</Property>-->
+	</Properties>
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${LOG.PATTERN}" />
+		</Console>
+
+	</Appenders>
+
+	<Loggers>
+		<AsyncRoot level="${output_log_level}" includeLocation="true">
+			<!-- 生产环境去掉console -->
+			<AppenderRef ref="console"/>
+		</AsyncRoot>
+	</Loggers>
+</Configuration>
