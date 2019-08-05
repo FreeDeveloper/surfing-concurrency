@@ -10,8 +10,9 @@ public class Fibonacci extends RecursiveTask<Integer> {
         }
 
         protected Integer compute(){
-            if (n <= 1)
+            if (n <= 1){
                 return n;
+            }
             Fibonacci f1 = new Fibonacci(n - 1);
             // 创建子任务
             f1.fork();
